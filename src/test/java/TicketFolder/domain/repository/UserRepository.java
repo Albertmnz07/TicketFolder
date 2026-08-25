@@ -5,9 +5,11 @@ import TicketFolder.domain.valueObject.UserEmail;
 import TicketFolder.domain.valueObject.UserId;
 import TicketFolder.domain.valueObject.Username;
 
+import java.util.Optional;
+
 public interface UserRepository {
-    User findByUsername(Username username);
-    User findById(UserId userId);
-    User findByEmail(UserEmail userEmail);
+    Optional<User> findByUsername(Username username);
+    Optional<User> findById(UserId userId);
+    Optional<User> findByEmail(UserEmail userEmail);
     void save(User user);
 }

@@ -5,10 +5,11 @@ import TicketFolder.domain.valueObject.FolderId;
 import TicketFolder.domain.valueObject.UserId;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface FolderRepository {
     List<Folder> findAllByUserId(UserId userId);
-    Folder findById(FolderId folderId);
+    Optional<Folder> findById(FolderId folderId);
     void save(Folder folder);
 
 }
