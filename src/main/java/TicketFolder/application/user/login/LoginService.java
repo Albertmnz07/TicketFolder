@@ -17,7 +17,10 @@ public class LoginService implements LoginUseCase {
     }
 
     @Override
-    public User execute(LoginCommand command) {
-        return userRepository.findByUsername(command.username()).orElseThrow(() -> new DomainException(ErrorCode.USER_NOT_FOUND));
+    public LoginResponse execute(LoginCommand command) {
+        return new LoginResponse(
+                userRepository.
+                        findByUsername(command.username()).
+                        orElseThrow(() -> new DomainException(ErrorCode.USER_NOT_FOUND)).getUserId());
     }
 }
