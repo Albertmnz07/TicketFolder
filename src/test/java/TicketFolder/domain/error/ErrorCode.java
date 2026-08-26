@@ -4,5 +4,7 @@ public enum ErrorCode {
     
     UNAVAILABLE_USERNAME,
 
-    USER_NOT_FOUND
+    USER_NOT_FOUND,
+
+    FOLDER_ALREADY_EXISTS
 }
