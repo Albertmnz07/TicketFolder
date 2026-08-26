@@ -12,6 +12,7 @@ public interface FolderRepository {
     List<Folder> findAllByUserId(UserId userId);
     Optional<Folder> findByNameAndUserId(FolderName folderName, UserId userId);
     Optional<Folder> findById(FolderId folderId);
+    void delete(Folder folder);
     void save(Folder folder);
 
 }
