@@ -10,6 +10,7 @@ import java.util.Optional;
 public interface TicketRepository {
     List<Ticket> findAllByFolderId(FolderId folderId);
     Optional<Ticket> findById(TicketId ticketId);
+    void deleteByFolderId(FolderId folderId);
     void delete(Ticket ticket);
     void save(Ticket ticket);
 }

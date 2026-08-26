@@ -27,4 +27,8 @@ public class Folder{
                 new FolderDescription("default tickets")
         );
     }
+
+    public boolean isDefault(){
+        return isDefault;
+    }
 }
