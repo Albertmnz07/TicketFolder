@@ -1,6 +1,6 @@
 package TicketFolder.domain.error;
 
-public class DomainException extends Exception{
+public class DomainException extends RuntimeException{
 
     private final ErrorCode code;
 
