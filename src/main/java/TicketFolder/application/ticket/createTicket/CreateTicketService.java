@@ -6,7 +6,9 @@ import TicketFolder.domain.repository.FolderRepository;
 import TicketFolder.domain.repository.TicketRepository;
 import TicketFolder.domain.repository.UserRepository;
 import TicketFolder.domain.valueObject.TicketId;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CreateTicketService implements CreateTicketUseCase{
 
     private final TicketRepository ticketRepository;
