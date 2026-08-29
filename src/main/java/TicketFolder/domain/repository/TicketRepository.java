@@ -4,7 +4,6 @@ import TicketFolder.domain.Model.Ticket;
 import TicketFolder.domain.valueObject.FolderId;
 import TicketFolder.domain.valueObject.TicketId;
 import TicketFolder.domain.valueObject.TicketName;
-import TicketFolder.domain.valueObject.UserId;
 
 import java.util.List;
 import java.util.Optional;

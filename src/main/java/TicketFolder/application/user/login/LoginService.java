@@ -1,6 +1,5 @@
 package TicketFolder.application.user.login;
 
-import TicketFolder.domain.Model.User;
 import TicketFolder.domain.error.DomainException;
 import TicketFolder.domain.error.ErrorCode;
 import TicketFolder.domain.repository.UserRepository;
